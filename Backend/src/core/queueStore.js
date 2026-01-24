@@ -1,9 +1,3 @@
-/**
- * queueStore.js
- * ----------------
- * In-memory FIFO queue for waiting users.
- * This module is intentionally simple and isolated.
- */
 
 class QueueStore {
   constructor() {
@@ -73,5 +67,5 @@ class QueueStore {
   }
 }
 
-// Export a SINGLE instance (singleton)
+
 module.exports = new QueueStore();
