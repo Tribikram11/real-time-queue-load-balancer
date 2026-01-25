@@ -62,7 +62,7 @@ class agentManager {
             reassignUser = agent.currentUser;
         }
 
-        agent.status = AGENT_STATUS.OFFLINE;
+        agent.status = agent_status.OFFLINE;
         agent.currentUser = null;
         agent.startedAt = null;
 
