@@ -1,4 +1,4 @@
-const EVENTS = require("../constants/events")
+const events = require("../constants/events")
 
 function userSocket(socket , io){
     console.log("user connected: ", socket.id)
