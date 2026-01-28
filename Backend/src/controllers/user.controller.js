@@ -12,10 +12,10 @@ function userJoinController(req, res) {
     }
 
     if(result.status === "QUEUED"){
-        socket.emit(events.QUEUE_UPDATED)
+        req.io.emit(events.QUEUE_UPDATED);
     }
 
-    res.json(result)
+    res.json(result);
 }
 
 
